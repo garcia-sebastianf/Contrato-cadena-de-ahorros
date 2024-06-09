@@ -9,6 +9,7 @@ NumeroMesesCadena = NumeroUsuarios
 $$
 
 <br>
+
 - El contrato establece fechas límite para los pagos de los usuarios. Un día antes de la fecha límite, se enviará una alerta a los usuarios como recordatorio para realizar el pago. Si un usuario no realiza su pago antes de la fecha límite, su billetera será excluida del contrato y quedará excluido de la cadena.<br><br><br>
   
 
@@ -18,5 +19,6 @@ $$
    > el cual será equivalente a la cantidad que hayan consignado hasta ese momento.
    
    <br>
+
 - Justo al finalizar el día de pago, se enviará una notificación a uno de los usuarios, seleccionado según el orden de la lista, informándole del monto que recibirá al final del plan y del nuevo valor de las cuotas que deberá pagar en adelante. Esto dependerá del número de usuarios que cumplan con sus pagos.
 
