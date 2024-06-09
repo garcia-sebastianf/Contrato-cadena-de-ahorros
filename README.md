@@ -20,5 +20,12 @@ $$
    
    <br>
 
-- Justo al finalizar el día de pago, se enviará una notificación a uno de los usuarios, seleccionado según el orden de la lista, informándole del monto que recibirá al final del plan y del nuevo valor de las cuotas que deberá pagar en adelante. Esto dependerá del número de usuarios que cumplan con sus pagos.
+- Justo al finalizar el día de pago, se enviará una notificación a uno de los usuarios, seleccionado según el orden de la lista, informándole del monto que recibirá al final el plan y del nuevo valor de las cuotas que deberá pagar en adelante. Esto dependerá del número de usuarios que cumplan con sus pagos.
+
+>Ejemplos de casos ideales y realistas.
+>En un escenario ideal, si participan 10 personas con una cuota inicial de 50 mil pesos, el monto asignado a un usuario al final del plan sería:
+> ```
+> MontoAsignadoUsuario = 10*50mil = 500mil
+> ```
+>Esto implica
 
