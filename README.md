@@ -24,8 +24,51 @@ $$
 
 >Ejemplos de casos ideales y realistas.
 >En un escenario ideal, si participan 10 personas con una cuota inicial de 50 mil pesos, el monto asignado a un usuario al final del plan sería:
-> ```
-> MontoAsignadoUsuario = 10*50mil = 500mil
-> ```
->Esto implica
+
+$$
+MontoAsignadoUsuario = 10*50mil = 500mil
+$$
+
+>Esto implica que el usuario deberá cumplir con una cuota mensual de 50mil pesos para completar el monto asignado.
+>
+>En un escenario más realista, si solo ocho personas cumplen con sus pagos, el monto asignado a un usuario sería:
+
+$$
+MontoAsignadoUsuario = 8*50mil = 400mil 
+$$
+
+>En este caso, la nueva cuota del usuario se calculará para garantizar que al final del plan pague el monto asignado:
+
+$$
+NuevoValorCuota = \frac{MontoAsignadoUsuario - ValorCuotasPagadas}{MesesRestantes}
+$$
+
+>Al actualizar el valor de las cuotas futuras de un usuario, se afectará el valor asignado a los usuarios en los meses posteriores. Esta fórmula se aplicará de forma recursiva para
+>calcular las nuevas cuotas de los demás usuarios.
+>
+>En este ejemplo, el usuario ya habría pagado una primera cuota de 50mil, pero se le asigna un monto de solo 400mil, por lo que según la fórmula anteriore su nuevo monto será:
+
+$$
+NuevoValorCuota = (400mil - 50mil*(1))/(10-1)
+$$
+
+$$
+NuevoValorCuota = 38.889 mil (Aproximado)
+$$
+
+>Los meses restantes en este caso son de 9, ya que se cumplió el primer mes de la cadena.
+>
+>Haciendo cuentas, con la actualización de la cuota del usuario, el monto que deberá pagar finalizando la cadena será de:
+
+$$
+  MontoAPagar = 50mil*(1)+38.889mil*(10-1) ≈ 400mil
+$$
+
+>Por lo que con la actualización de su cuota el usuario terminará pagando el mismo monto que se le asignará finalizando la cadena.
+
+# Modelo de negocio:
+
+El dueño del contrato siempre será el dueño de la aplicación, con el objetivo de prevenir que personas inescrupulosas creen cadenas de forma indiscriminada para vaciar los fondos. Cuando un usuario desee desplegar un contrato, deberá pagar un pequeño monto adicional al requerido por la red de Ethereum. Esta tarifa adicional será asignada a la billetera del dueño de la aplicación. Además, el usuario que haya desplegado el contrato tendrá la capacidad de agregar usuarios a la cadena del contrato dentro de un tiempo límite establecido antes de que el contrato se active de forma automática. Sin embargo, para que estos usuarios sean efectivamente incorporados, deberán pagar una pequeña tarifa adicional. Este monto adicional se transferirá a la billetera del usuario que desplegó el contrato, con el fin de incentivar la creación de nuevas cadenas y el crecimiento de la comunidad. 
+
+
 
