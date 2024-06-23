@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\sebas\\Desktop\\PaginaContrato\\backend\\contracts\\ContratoCadena.sol": {
+      "lastModificationDate": 1718904466733,
+      "contentHash": "2b33dab5b7301db37ff8d0777f45edfe",
+      "sourceName": "contracts/ContratoCadena.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "ContratoCadena"
+      ]
+    }
+  }
+}
