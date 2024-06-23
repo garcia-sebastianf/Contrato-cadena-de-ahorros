@@ -1,5 +1,5 @@
 # Contrato-cadena-de-ahorros
-Este proyecto crea una página Web3 con una interfaz gráfica que permite a los usuarios interactuar visualmente con la red de prueba de Ethereum (Sepolia). La lógica del contrato en el backend automatiza un método de ahorro conocido como cadenas, asegurando que las personas puedan ahorrar sin riesgo de perder su dinero. 
+Este proyecto crea una página Web3 con una interfaz gráfica que permite a los usuarios interactuar visualmente con la red de prueba de Ethereum (Sepolia). La lógica del contrato en el backend automatiza un método de ahorro conocido como cadenas, asegurando que las personas puedan ahorrar sin riesgo de perder su dinero. El código del contrato está ubicado en backend/contracts/ContratoCadena.sol
 
 # Lógica general del contrato
 - El contrato debe ser creado para esperar el pago de los participantes en intervalos regulares, por ejemplo, mensualmente. La duración total del plan de ahorro dependerá del número de participantes, y esta duración se fijará al inicio y no cambiará incluso si algunos usuarios quedan excluidos.<br><br>
